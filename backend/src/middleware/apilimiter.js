@@ -8,7 +8,6 @@ export const apilimiterMiddleware = rateLimit({
     status: StatusCodes.TOO_MANY_REQUESTS,
     error: "Too many requests, please try again in 15 minutes."
   },
-  standardHeaders: true,
-  legacyHeaders: false,
+  delayMs: 0,
 });
 

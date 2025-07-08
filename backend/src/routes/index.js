@@ -1,7 +1,7 @@
 // import UserRoute from './user.routes.js';
 // import AuthRoute from './auth.routes.js';
 
-
+import logger from '../logging/logger.js';
 import express from 'express';
 const router = express.Router();
 import { StatusCodes } from 'http-status-codes';
