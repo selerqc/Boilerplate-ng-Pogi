@@ -1,6 +1,6 @@
 import { Strategy as LocalStrategy } from 'passport-local';
 import bCrypt from 'bcrypt';
-import logger from '../logging/logger.js';
+import logger from '../../logs/logger.js';
 import UserModel from '../models/UserModel.js';
 import { StatusCodes } from 'http-status-codes'
 

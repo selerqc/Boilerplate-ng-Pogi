@@ -1,12 +1,13 @@
 // import UserRoute from './user.routes.js';
 // import AuthRoute from './auth.routes.js';
 
-import logger from '../logging/logger.js';
+import logger from '../../logs/logger.js';
 import express from 'express';
 const router = express.Router();
 import { StatusCodes } from 'http-status-codes';
 
 router.get('/', (req, res) => {
+  logger.info('GET / endpoint hit');
   res.status(StatusCodes.OK).json({
     message: 'Welcome to the Test',
     status: StatusCodes.OK,
@@ -14,6 +15,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/health', (req, res) => {
+  logger.info('GET /health endpoint hit');
   res.status(StatusCodes.OK).json({
     status: 'ok',
   });
