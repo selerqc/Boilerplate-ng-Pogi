@@ -43,7 +43,7 @@ app.use(cors({
 }));
 
 app.use('/api/any', Route);
-
+app.get('/favicon.ico', (req, res) => { res.status(204).end(); });
 app.use(function (req, res, next) {
   next(createError(404, 'Not Found'));
 });

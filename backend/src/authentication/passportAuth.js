@@ -1,7 +1,7 @@
 import { Strategy as LocalStrategy } from 'passport-local';
 import bCrypt from 'bcrypt';
 import logger from '../../logs/logger.js';
-import UserModel from '../models/UserModel.js';
+import UserModel from '../models/userModel.js';
 import { StatusCodes } from 'http-status-codes'
 
 const checkPermissions = (req, res, validPermission, done) => {
